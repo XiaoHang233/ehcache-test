@@ -1,0 +1,19 @@
+subprojects {
+    apply plugin: 'java'
+
+    group = 'com.example'
+    version = '0.0.1-SNAPSHOT'
+    sourceCompatibility = 1.8
+
+    repositories {
+        maven {
+            url = 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+        mavenCentral()
+    }
+}
+
+
+configure([project(':test-ehcache-1'), project(':test-ehcache-2')]) {
+
+}

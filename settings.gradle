@@ -1,0 +1,9 @@
+//pluginManagement {
+//    repositories {
+//        gradlePluginPortal()
+//    }
+//}
+rootProject.name = 'ehcache'
+include('test-ehcache-1')
+include('test-ehcache-2')
+include('base-cache')
